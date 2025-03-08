@@ -1,14 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import AboutArtist from './pages/AboutArtist';
-import Navbar from './components/navbar';
+
 import Footer from './components/footer';
 import ArtworkShowcase from './components/Home';
+import Navbar from './components/navbar';
 
 function App() {
   return (
     <Router>
-      <Navbar />
+  <Navbar />
       <Routes>
         <Route path="/" element={<ArtworkShowcase />} />
         <Route path="/about" element={<AboutArtist />} />
