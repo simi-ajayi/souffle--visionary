@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <header className="w-full py-4 px-6 border-b border-gray-300 bg-white shadow-md">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <div className="max-w-7xl mx-auto flex items-center justify-normal gap-4 md:justify-between">
 
         {/* Mobile Menu Button */}
         <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
