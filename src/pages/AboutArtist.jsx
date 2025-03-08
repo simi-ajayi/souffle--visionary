@@ -10,7 +10,7 @@ const AboutArtist = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-            <div className="text-3xl mt-[-20px] uppercase bg-white p-4 rounded-md font-bold mb-1">Meet the artist</div>
+            <div className="text-3xl mt-[-20px] uppercase text-white bg-black p-4  font-bold mb-1">Meet the artist</div>
 
       {/* Artist Info Section */}
       <motion.div
