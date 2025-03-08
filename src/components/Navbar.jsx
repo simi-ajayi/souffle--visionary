@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,10 +24,10 @@ const Navbar = () => {
         </h1>  
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-6 text-lg">
-        <a href="/" className="hover:text-blue-600">Home</a>
+        <Link to="/" className="hover:text-blue-600">Home</Link>
           <a href="#" className="hover:text-blue-600">Collections</a>
           <a href="#" className="hover:text-blue-600">Collaborations</a>
-          <a href="/about" className="hover:text-blue-600">About</a>
+          <Link to="/about" className="hover:text-blue-600">About</Link>
           {/* <a href="#" className="hover:text-blue-600">Contact</a> */}
         </nav>
 
@@ -37,10 +38,10 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       {isOpen && (
         <div className="md:hidden flex flex-col space-y-4 px-6 pt-4 pb-6 bg-white border-t border-gray-300">
-          <a href="/" className="hover:text-blue-600">Home</a>
+         <Link to="/" className="hover:text-blue-600">Home</Link>
           <a href="#" className="hover:text-blue-600">Collections</a>
           <a href="#" className="hover:text-blue-600">Collaborations</a>
-          <a href="/about" className="hover:text-blue-600">About</a>
+          <Link to="/about" className="hover:text-blue-600">About</Link>
           {/* <a href="#" className="hover:text-blue-600">Contact</a> */}
         </div>
       )}
