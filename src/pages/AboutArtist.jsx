@@ -25,14 +25,14 @@ const AboutArtist = () => {
           className="w-[300px] h-[300px] mx-auto md:w-1/3 md:h-1/3 p-6 object-cover rounded-full"
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1.5 }}
         />
 
         <motion.div
           className="flex-1 p-2"
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1.5 }}
         >
           <h2 className="text-3xl font-bold text-gray-800">Artist Name</h2>
           <p className="text-gray-600 mt-3">

@@ -62,7 +62,7 @@ const ArtworkShowcase = () => {
                 className="flex flex-col items-center"
                 animate={{ 
                   scale: hoveredIndex === index ? 1.1 : 1,
-                  transition: { duration: 0.6 }
+                  transition: { duration: 1.5 }
                 }}
               >
                 <span className="text-xl font-semibold">Collection {index}</span>
@@ -74,7 +74,7 @@ const ArtworkShowcase = () => {
                     opacity: hoveredIndex === index ? 1 : 0,
                     height: hoveredIndex === index ? "auto" : 0 
                   }}
-                  transition={{ duration: 0.3 }}
+                  transition={{ duration: 1.0 }}
                   className="text-sm text-center mt-2 hidden md:flex text-gray-400"
                 >
                   Click to view all artworks in this collection
