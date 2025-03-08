@@ -14,7 +14,7 @@ const AboutArtist = () => {
 
       {/* Artist Info Section */}
       <motion.div
-        className="max-w-4xl bg-white shadow-xl rounded-lg overflow-hidden flex flex-col md:flex-row p-6"
+        className="max-w-4xl bg-white shadow-xl opacity-80 rounded-lg overflow-hidden flex flex-col md:flex-row p-6"
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ type: "spring", stiffness: 100, damping: 10 }}
@@ -31,7 +31,7 @@ const AboutArtist = () => {
         <motion.div
           className="flex-1 p-2"
           initial={{ x: 100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+          animate={{ x: 0, opacity: 0.8 }}
           transition={{ duration: 1.5 }}
         >
           <h2 className="text-3xl font-bold text-gray-800">Artist Name</h2>
@@ -52,9 +52,9 @@ const AboutArtist = () => {
 
       {/* Contact Section */}
       <motion.div
-        className="mt-12 bg-gray-900 text-white p-6 rounded-lg shadow-lg text-center w-full max-w-3xl"
+        className="mt-12 bg-black text-white p-6 rounded-lg shadow-lg text-center w-full max-w-3xl"
         initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
+        animate={{ scale: 1, opacity: 0.8 }}
         transition={{ type: "spring", stiffness: 200 }}
       >
         <h3 className="text-2xl font-semibold">Get in Touch</h3>
