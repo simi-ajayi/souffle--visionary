@@ -52,7 +52,7 @@ const CollectionPage = () => {
     <motion.div className="bg-cover bg-center bg-no-repeat text-black min-h-screen flex flex-col items-center"
       style={{
         backgroundImage:
-          "url('https://firebasestorage.googleapis.com/v0/b/project-39ce3.appspot.com/o/IMG_9667.JPG?alt=media&token=b7a1becd-7294-4554-af60-03c5c07c5b93')",
+          "url('https://firebasestorage.googleapis.com/v0/b/project-39ce3.appspot.com/o/IMG_9667.JPG?alt=media&token=b1561823-deb9-4115-b511-4c95d0205d5f')",
       }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}

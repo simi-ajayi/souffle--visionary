@@ -17,7 +17,7 @@ const Navbar = () => {
         {/* Logo */}
 
         <h1 className="text-2xl flex items-center font-bold uppercase">
-          <img className='w-10 mr-1 h-10 rounded-full object-cover object-center' src="https://firebasestorage.googleapis.com/v0/b/project-39ce3.appspot.com/o/IMG_9667.JPG?alt=media&token=b7a1becd-7294-4554-af60-03c5c07c5b93" alt="logo" />
+          <img className='w-10 mr-1 h-10 rounded-full object-cover object-center' src="https://firebasestorage.googleapis.com/v0/b/project-39ce3.appspot.com/o/IMG_9667.JPG?alt=media&token=b1561823-deb9-4115-b511-4c95d0205d5f" alt="logo" />
           Soufflé 
           <span className="animate-pulse text-gray-900 ml-2">
             Visionary
