@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full py-4 px-6 border-b border-gray-300 bg-white shadow-md">
+    <header className="w-full py-4 z-50 fixed top-0 left-0 right-0 px-6 border-b border-gray-300 bg-white shadow-md">
       <div className="max-w-7xl mx-auto flex items-center justify-normal gap-4 md:justify-between">
 
         {/* Mobile Menu Button */}
@@ -15,7 +15,6 @@ const Navbar = () => {
         </button>
 
         {/* Logo */}
-
         <h1 className="text-2xl flex items-center font-bold uppercase">
           <img className='w-10 mr-1 h-10 rounded-full object-cover object-center' src="https://firebasestorage.googleapis.com/v0/b/project-39ce3.appspot.com/o/IMG_9667.JPG?alt=media&token=b1561823-deb9-4115-b511-4c95d0205d5f" alt="logo" />
           Soufflé 
@@ -42,8 +41,6 @@ const Navbar = () => {
           <Link to="/about" className="hover:text-blue-600" onClick={() => setIsOpen(false)}>About</Link>
         </div>
       )}
-
-      
     </header>
   );
 };
