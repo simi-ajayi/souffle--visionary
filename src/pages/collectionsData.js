@@ -1,15 +1,25 @@
-const collection1 = import.meta.glob("../assets/Collection1/*.(png|jpg|jpeg|svg)", { eager: true });
-const collection2 = import.meta.glob("../assets/Collection2/*.(png|jpg|jpeg|svg)", { eager: true });
-const collection3 = import.meta.glob("../assets/Collection3/*.(png|jpg|jpeg|svg)", { eager: true });
-const collection4 = import.meta.glob("../assets/Collection4/*.(png|jpg|jpeg|svg)", { eager: true });
+const collection1 = import.meta.glob("../assets/Collection1/*.(png|jpg|jpeg|svg)");
+const collection2 = import.meta.glob("../assets/Collection2/*.(png|jpg|jpeg|svg)");
+const collection3 = import.meta.glob("../assets/Collection3/*.(png|jpg|jpeg|svg)");
+const collection4 = import.meta.glob("../assets/Collection4/*.(png|jpg|jpeg|svg)");
 
-const getImages = (collection) => Object.values(collection).map((img) => ({ images: [img.default] }));
-
-const collectionsData = {
-  1: getImages(collection1),
-  2: getImages(collection2),
-  3: getImages(collection3),
-  4: getImages(collection4),
+const loadImages = async (collection) => {
+  const imagePaths = await Promise.all(
+    Object.values(collection).map(async (img) => {
+      const module = await img(); 
+      return { images: [module.default] };
+    })
+  );
+  return imagePaths;
 };
+
+const collectionsData = {};
+
+(async () => {
+  collectionsData[1] = await loadImages(collection1);
+  collectionsData[2] = await loadImages(collection2);
+  collectionsData[3] = await loadImages(collection3);
+  collectionsData[4] = await loadImages(collection4);
+})();
 
 export default collectionsData;
