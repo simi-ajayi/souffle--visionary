@@ -36,7 +36,7 @@ const CollectionPage = () => {
   };
 
   const confirmPurchase = () => {
-    window.location.href = `mailto:ayantoyemoyinoluwa@gmail.com?subject=Interested in Artwork&body=I would like to purchase the artwork`;
+window.location.href = `mailto:ayantoyemoyinoluwa@gmail.com?subject=Interested%20in%20Artwork&body=I%20would%20like%20to%20purchase%20the%20artwork.%0A%0AI%20am%20also%20interested%20in%20a%20poem.`;
     setPurchasePopup(null);
   };
 
